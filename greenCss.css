@@ -1,61 +1,266 @@
-#body{
-    margin-left: 120px;
-    margin-right: 120px;
-    margin-top: 2%;
-    margin-bottom: 2%;
-border: gray solid 1px;
+ html{
+     display: flex;
+     flex-direction: column;
+     min-height: 100%;
+     min-width: 460px;
+     background-color: rgb(255, 255, 255);
+ }
+ 
+ 
+ #body{
+     margin: 0px;
+     padding: 0px auto;
+     display: flex;
+     flex-direction: column;
+     flex: auto;
 }
-#logo{
+.header{
+    position: static; 
+    width: auto;
+    height: 140px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(236, 239, 241);
+    margin: 0;
+    padding: 0px 10px;
+}
+.mask{
+    display: flex;
+    padding: 55px;
+    margin: 0px 5px 10px 10px;
     background-image: url(img/gazon3.jpg);
-    width: 90px;
-    height: 90px;
-    background-size: 12em;
+    background-size: 170px 130px;
     background-repeat: no-repeat;
-    border-radius: 70px;
-   background-position: center;
-   margin: 35px 15px 35px 35px;
+    border-radius: 55px;
+} 
+.logo_par{
+    display: flex;
+    justify-content: flex-start;
+    width: 100px;
+    height: 100px;
 
 }
-.countener{
-    background-color: rgb(221, 221, 221);
-    border: solid 1px gray;
-    display: flex;
-    justify-content: start;
+.green-plots{
+    flex-direction: column;
 }
-.plot{
-    /* border: solid 1px black; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(55, 114, 0);
-    text-align: center;
-    font-size: 42px
-}
- div.head_button, a {
-font-family: Arial, Helvetica, sans-serif;
-font-size: 17px;
-    display: flex;
-    justify-content: center;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    width: 140px;
-    height: 30px;
+.green-plot{
+    margin: auto;
     align-items: center;
     align-content: center;
-    margin: 5px;
-
-    background-color: rgb(14, 119, 0);
-}
-.head{
     display: flex;
+    justify-content: flex-start;
+    font-size: 42px;
+    font-family: sans-serif;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.green-plot1{
+    margin: auto;
+    font-display: auto;    
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 42px;
+    font-family: sans-serif;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.line{
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px green;
+    background-color: green;
+    margin: 0 5px; 
+    width: 1px;
+    height: 100px;
+}
+.after-line{
+    position: inherit;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px auto 0px 5px;
+    color: gray;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+.number-work{
+    display: flex;
+    flex-direction: column; 
+    flex-wrap:  wrap;
     justify-content: flex-end;
+    margin: 0px 5px 5px 30em;;
+}
+.cont1{
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+.cont2{
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+.number{
+text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+}
+.allDay{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    font-size: 15px;
+}
+.inst-logo{
+
+justify-content: flex-end;
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    margin: 0px auto 10px auto;
+    font-size: 18px;
+}
+.inst-text{
+
+    flex-wrap: nowrap;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+}
+
+.whatsapp-text{
+margin: 0 0 0 30px;
+    align-content: flex-end;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+.nav-but1{
+    background-color: rgb(128, 221, 105);
+font-family: Arial, Helvetica, sans-serif;
+border-radius: 5px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    display: flex;
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+}
+.nav-but1:hover{
+    background-color: rgb(34, 109, 0);
+    border-radius: 5px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    display: flex;
+color: rgb(255, 255, 255);
+/* transition-delay: 70ms; */
+translate: -10deg 10deg;
+}
+.nav-but2:hover{
+    -o-transform: skew(-5deg, 5deg);
+    -ms-transform: skew(-5deg, 5deg);
+    -moz-transform: skew(-5deg, 5deg);
+    -webkit-transform: skew(-5deg, 5deg); 
+    transform: skew(-5deg, 5deg); 
+    /* transition-delay: 0.2s; */
+    background-color: rgb(34, 109, 0);
+    border-radius: 5px;
+    margin: 0 0 0 10px;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        display: flex;
+    color: rgb(255, 255, 255);
+    }
+    
+.nav-but2{
+    background-color: rgb(128, 221, 105);
+    font-size: 16px;
+    border-radius: 5px;
+margin: 0 0 0 10px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    display: flex;
+    width: 150px;
+    height: 30px;
+}
+.buttons{
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.nav-r{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: auto;
+    margin: 25px 25px 35px auto;
+}
+
+
+
+
+
+
+
+
+.head{
     padding: 10px;
-    background: rgb(0, 145, 0);
+    margin: 0 0 20px 0;
+    background: linear-gradient(to top, rgb(31, 78, 0) 20%, rgb(0, 128, 0) 50%, rgb(56, 197, 0) 80%);
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .head_section{
+    flex-direction: row;
+    flex-wrap: wrap;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+    align-content: center;
+
+}
+div.head_button, a {
+    font-family: Tahoma, sans-serif;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+font-size: 19px;
+    display: flex;
+    justify-content: center;
+    color: rgb(216, 216, 216);
+    text-shadow: 2px 1px 2px 3px white;
+    text-decoration: none;
+    width: 180px;
+    height: 40px;
+    align-items: center;
+    align-content: center;
+    /* margin: 3px; */
+    border-radius: 5px; 
 }
 /* .head_button{
     margin: auto;
@@ -72,24 +277,61 @@ box-shadow: 1px 1px 3px 2px rgb(178, 243, 178) ;
 box-align:  center;
 background-color: rgb(0, 78, 0);
 } */
-.line{
-    background-color: rgb(92, 153, 0);
-    height: 100px;
-    width: 2px;
-    margin: 30px 5px 20px 7px;
-}
-.landscaping-company{
-    align-content: center;
-    font-size: 25px;
-    font-family: 'Courier New', Courier, monospace;
-    color: gray;
-    margin: 45px 5px;
-}
-.head_button a:hover , a:active{
-    background-color: rgb(0, 124, 10);
-    box-shadow: 1px 2px 5px 2px rgb(188, 255, 171);
-}
-.fas fa-phone-square{
-    color: green;
+div.head_button a:hover{
+    background: linear-gradient(to top rgb(0, 43, 0), green, rgb(0, 255, 0));
+    box-shadow: 1px 2px 5px 2px rgb(186, 255, 169) , 3px 6px 5px rgb(12, 59, 0) ;
+    text-decoration: none;
+    /* color: rgb(94, 255, 0); */
+    margin: 3px;
+    transition: all 0.5s ease-in-out;
+    color: rgb(255, 255, 255);
 }
 
+.img_fon{
+    
+    /* margin: 20px 0px 0px 0px; */
+    /* display: flex; */
+    /* justify-items: center; */
+    /* background-position: center; */
+    background-size: cover;
+    background-image: url(img/9f.jpg);
+    width: 100%;
+    height: 650px;
+}
+.clean{
+    font-family: sans-serif, bold;
+    display: flex;
+    text-align: center;
+    /* align-content: center; */
+    margin: 15px;
+    font-size: 45px;
+    color: white;
+}
+.fon_clean{
+    display: flex;
+    justify-content: center;
+    margin: 15%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* width: 50%; */
+    /* height: auto; */
+}
+.about-as{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    align-content: center;
+}
+h1{
+    font-size: 55px;
+}
+.about-as p{
+    font-size: 30px;
+    padding: 40px;
+text-align: center;
+
+}
