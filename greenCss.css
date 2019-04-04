@@ -8,7 +8,7 @@
  
  
  #body{
-     margin: 0px;
+     margin: auto 20px;
      padding: 0px auto;
      display: flex;
      flex-direction: column;
@@ -43,9 +43,11 @@
 }
 .green-plots{
     flex-direction: column;
+    margin: 0px;
+    display: flex;
 }
 .green-plot{
-    margin: auto;
+    margin: auto 15px;
     align-items: center;
     align-content: center;
     display: flex;
@@ -53,10 +55,10 @@
     font-size: 42px;
     font-family: sans-serif;
     color: green;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Impact, sans-serif;
 }
 .green-plot1{
-    margin: auto;
+    margin: auto 15px;
     font-display: auto;    
     align-items: center;
     align-content: center;
@@ -65,7 +67,7 @@
     font-size: 42px;
     font-family: sans-serif;
     color: green;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Tahoma, Verdana, sans-serif;
 }
 
 .line{
@@ -81,10 +83,10 @@
     position: inherit;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 15px auto 0px 5px;
+    margin: 15px 0px 0px 5px;
     color: gray;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     flex-wrap: wrap;
 }
 .number-work{
@@ -111,19 +113,35 @@
 .number{
 text-align: center;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin: auto;
+    font-size: 15px;
 }
 .allDay{
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: auto;
     font-size: 15px;
+}
+.marker-32{
+    margin: 5px;
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.number-logo{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 5px;
 }
 .inst-logo{
 
 justify-content: flex-end;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
     margin: 0px auto 10px auto;
@@ -131,7 +149,7 @@ justify-content: flex-end;
 }
 .inst-text{
 
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     display: flex;
     flex-wrap: wrap-reverse;
     align-items: center;
@@ -141,7 +159,7 @@ justify-content: flex-end;
 margin: 0 0 0 30px;
     align-content: flex-end;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -153,6 +171,8 @@ margin: 0 0 0 30px;
 
 
 .nav-but1{
+    flex-wrap: wrap;
+
     background-color: rgb(128, 221, 105);
 font-family: Arial, Helvetica, sans-serif;
 border-radius: 5px;
@@ -196,7 +216,7 @@ translate: -10deg 10deg;
     background-color: rgb(128, 221, 105);
     font-size: 16px;
     border-radius: 5px;
-margin: 0 0 0 10px;
+    margin: 0 0 0 10px;
     justify-content: center;
     display: flex;
     text-align: center;
@@ -297,6 +317,7 @@ div.head_button a:hover{
     background-image: url(img/9f.jpg);
     width: 100%;
     height: 650px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .clean{
     font-family: sans-serif, bold;
@@ -310,28 +331,154 @@ div.head_button a:hover{
 .fon_clean{
     display: flex;
     justify-content: center;
-    margin: 15%;
+    margin: 257px auto;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     /* width: 50%; */
     /* height: auto; */
 }
 .about-as{
+    display: flex;
+    flex-direction: column;
+    padding: auto;
     margin: auto;
     display: flex;
     flex-direction: column;
-    background-color: antiquewhite;
+    background-color: rgb(236, 239, 241);
     width: 100%;
-    height: 600px;
+    height: auto;
     align-items: center;
     align-content: center;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
 }
-h1{
+.about-as h1{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     font-size: 55px;
+    margin: 40px auto;
 }
 .about-as p{
     font-size: 30px;
-    padding: 40px;
+    padding: auto;
 text-align: center;
+flex-direction: column;
+display: flex;
+margin: 15px 40px;
+align-items: center;
+}
+.between{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top, rgb(80, 80, 80) 20%, rgb(198, 199, 202) 50%,  rgb(236, 239, 241) 100%);
+ background-color: white;
+ width: auto;
+ height: 100px;
+ /* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
+}
+.cleening-plot{
+    justify-content: space-around;
+    margin: 30px auto;
+    background-image: url();
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.button a{
+    color: white;
+    padding: 5px;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(0, 156, 0);
+    width: 150px;
+    height: 30px;
+}
+.fon{
+    background-color: rgb(255, 250, 227);
+    font-size: 30px;
 
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 15px;
+    border: 1px black solid;
+}
+.portfolio-cont{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    background-color: rgb(236, 239, 241);
+    margin: 15px auto;
+}
+.price{
+    margin: 5px 5px 5px 180px;
+    align-content: center;
+    align-items: center;
+}
+.content-price{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.spil{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    border: solid 1px red;
+    width: 250px;
+    height: 250px;
+}
+.snos{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px red;
+    width: 250px;
+    height: 250px;
+}
+.snos{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px red;
+    width: 250px;
+    height: 250px;
+}
+.udalenie{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px red;
+    width: 250px;
+    height: 250px;
+}
+.pokos{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px red;
+    width: 250px;
+    height: 250px;
+}
+.planirovka{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px red;
+    width: 250px;
+    height: 250px;
+}
+.vivoz{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px red;
+    width: 250px;
+    height: 250px;
 }
